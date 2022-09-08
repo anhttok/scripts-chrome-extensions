@@ -19,8 +19,10 @@ const sitesConfig = {
 
 
 const href = window.location.href;
+console.log("href", href);
 
 const currentSiteConfig = Object.keys(sitesConfig).find(site => href.includes(site));
+console.log("currentSiteConfig", currentSiteConfig);
 
 if (currentSiteConfig) {
   sitesConfig[currentSiteConfig]()
